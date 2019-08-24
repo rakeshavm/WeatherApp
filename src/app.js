@@ -63,27 +63,27 @@ app.get('/products',(req,res)=>{
 })
 app.get('/help', (req,res) => {
     res.render('help',{
-        name: 'Avi',
+        name: 'Raki',
         helpText: 'this is help!'
     })
 })
 
 app.get('/about', (req,res) => {
     res.render('about',{
-        name:'Ravi'
+        name:'Raki'
     })
 })
 
 app.get('/help/*',(req,res)=>{
     res.render('404',{
-        name: 'Avi',
+        name: 'Raki',
         errorMes:'Help Article not found'
     })
 })
 
 app.get('*',(req,res)=>{
     res.render('404',{
-        name: 'Avi',
+        name: 'Raki',
         errorMes:'Page not found'
     })
 })
